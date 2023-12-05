@@ -1,0 +1,7 @@
+Imported project from a github repo that wasn't migrated to AndroidX as it the current mode to support android versions over android 12: https://github.com/rohanrao619/Library_Management_Android_App
+Migrating to AndroidX: Refractor tab -> Migrate to Android X
+Update content of project and app build.gradle to be like of new projects.\
+-Check changes in Dependencies of app.gradle; for appcompat,cardview and firebaseui 
+-When importing a dependency in project build.gradle, add its classpath in 'buildscript/dependencies' instead of adding it in 'plugins'.This is bcoz in former, android studio can inform you if you need to update a dependency.
+Update content of settings.gradle to be like of new projects
+Update gradle version used in gradle-wrapper.properties
